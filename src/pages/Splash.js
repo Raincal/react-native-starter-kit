@@ -2,14 +2,15 @@
  * Created by tdzl2_000 on 2015-12-22.
  */
 
-import React, {
+import React, {Component} from 'react';
+import {
   View,
   Text,
 } from 'react-native';
 
 import styles from './Splash.styles';
 
-export default class Splash extends React.Component {
+export default class Splash extends Component {
   render() {
     return (
       <View style={styles.centerContainer}>

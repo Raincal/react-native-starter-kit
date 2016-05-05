@@ -4,8 +4,8 @@
 
 import { Provider } from 'react-redux';
 import store from './redux/store';
-
-import React, {
+import React, {Component} from 'react';
+import {
   AppRegistry,
   Platform,
   BackAndroid,
@@ -14,7 +14,7 @@ import React, {
 
 import Splash from './pages/Splash';
 
-class App extends React.Component {
+class App extends Component {
   componentWillMount() {
     if (Platform.OS === 'android') {
       BackAndroid.addEventListener('hardwareBackPress', this.onBackAndroid);
