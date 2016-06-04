@@ -5,6 +5,7 @@
   "scripts": {
     "test": "node node_modules/eslint/bin/eslint .",
     "start": "react-native start",
+    "adb": "adb reverse tcp:8081 tcp:8081",
     "clean:babelrc": "find ./node_modules -name react-packager -prune -o -name '.babelrc' -print | xargs rm -f",
     "postinstall": "npm run clean:babelrc"
   },
